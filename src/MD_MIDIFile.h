@@ -603,7 +603,7 @@ public:
    * \param psd Pointer to the SDFat object.
    * \return No return data.
    */
-  void begin(SdFat *psd);
+  void begin(SdFatSdio *psd);
 
   //--------------------------------------------------------------
   /** \name Methods for MIDI time base
@@ -984,7 +984,7 @@ protected:
 
 	// file handling
   uint8_t   _selectSD;          ///< SDFat select line
-  SdFat     *_sd;		            ///< SDFat library descriptor supplied by calling program
+  SdFatSdio     *_sd;		            ///< SDFat library descriptor supplied by calling program
   SdFile    _fd;                ///< SDFat file descriptor
   MD_MFTrack   _track[MIDI_MAX_TRACKS]; ///< the track data for this file
 };

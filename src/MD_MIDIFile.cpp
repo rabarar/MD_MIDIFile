@@ -71,7 +71,7 @@ MD_MIDIFile::~MD_MIDIFile()
   close();
 }
 
-void MD_MIDIFile::begin(SdFat *psd)
+void MD_MIDIFile::begin(SdFatSdio *psd)
 {
 	_sd = psd;
 }
